@@ -1,0 +1,34 @@
+class Vinyl:
+  def __init__(self, the_year_of_publishing: int, implementer: str, name: str, country of publication: str):
+    '''
+        Создание и подготовка к работе объекта "Винил"
+        :param the_year_of_publishing: Год издания 
+        :param implementer: Исполнитель
+        :param name: Название пластинки
+        :param country of publication: Страна издания пластинки
+        '''
+        self.the_year_of_publishing = the_year_of_publishing
+        self.implementer = implementer
+        self.name = name
+        self.country of publication = country of publication
+  
+  def get_country_of_publication(self) -> str:
+         ''' 
+        Функция называет страну издания пластики
+        :return: Страна издания пластинки
+        '''
+        ...
+
+  def age(self) -> int:
+         ''' 
+        Функция считает возраст пластики
+        :return: Возраст пластинки
+        '''
+        ...
+  
+  def get_implementer(self):
+     ''' 
+        Функция называет исполнителя, записанного на пластинке
+        :return: Исполнитель
+        '''
+        ...    
