@@ -1,0 +1,32 @@
+class Dogs:
+    def __init__(self, name: str, dog_breed: str, country_of_origin: str, breed_class_type: str):
+      '''
+        Создание и подготовка к работе объекта "Песики"
+        :param name: Кличка питомца
+        :param dog_breed: Название породы
+        :param country_of_origin: Страна происхождения породы
+        :param breed class type: Тип породы по классификации пород
+        '''
+        self.dog_breed = dog_breed
+        self.country_of_origin = country_of_origin
+        self.breed_class_type = breed_class_type
+
+    def what_is_breed(self) -> str:
+        ''' 
+        Функция называет породу собаки
+        :return: Название породы
+        '''
+        ...
+
+    def country(self) -> str:
+        ''' 
+        Функция называет страну происхождения породы песика
+        :return: Название страны происхождения породы
+        '''
+        ...
+    def class_type(self) -> str:
+        ''' 
+        Функция называет класс породы песика
+        :return: Название класса породы
+        '''
+        ...
