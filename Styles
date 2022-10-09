@@ -1,0 +1,42 @@
+class Styles:
+    def __init__(self, name: str, date_of_birth: int, expiration_date: int): 
+        '''
+        Создание и подготовка к работе объекта "Стили архитектуры"
+        :param name: Название стиля
+        :param date_of_birth: Дата возникновения
+        :param expiration_date: Дата упадка
+        :param life_time: Время существования стиля
+        '''
+        self.name = name
+        self.date_of_birth = date_of_birth
+        self.expiration_date = expiration_date
+        self.life_time = self.get_life_time()
+
+    def get_life_time(self):
+        ''' 
+        Функция рассчитывает время существования стиля
+        '''
+        life_time = self.expiration_date - self.date_of_birth
+        return (life_time)
+
+modern = Styles('Модерн', 1880, 1914)
+baroque = Styles('Барроко', 1718, 1750)
+
+print(modern.life_time) # напечатать даты существования стиля
+print(baroque.life_time)
+
+     def say_name(self) -> str:
+        ''' 
+        Функция называет название стиля
+
+        :return: Название стиля
+        '''
+        ...
+
+     def say_date_of_birth(self) -> int:
+        ''' 
+        Функция называет дату возникновения стиля
+
+        :return: Дата возникновения
+        '''
+        ...
